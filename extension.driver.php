@@ -24,8 +24,6 @@
 		
 		public function addSessionValuesToPageParam($context){
 			
-			session_start();
-			
 			if(!is_array($_SESSION[__SYM_COOKIE_PREFIX__ . '-sessionmonster']) || empty($_SESSION[__SYM_COOKIE_PREFIX__ . '-sessionmonster'])) return NULL;			
 
 			foreach($_SESSION[__SYM_COOKIE_PREFIX__ . '-sessionmonster'] as $key => $val){
